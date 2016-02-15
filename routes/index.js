@@ -6,7 +6,9 @@ var calls = require('../lib/calls')
 router.get('/', function(req, res, next) {
 
   console.log(calls.breckCall().sunset);
-  res.render('index', { title: 'Express', breck: breck});
+  var breck = calls.breckCall();
+  var vail = calls.vailCall();
+  res.render('index', { title: 'Express', breck: breck, vail: vail});
 });
 
 module.exports = router;
