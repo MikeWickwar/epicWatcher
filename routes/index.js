@@ -9,7 +9,9 @@ router.get('/', function(req, res, next) {
   var breck = calls.breckCall();
   var vail = calls.vailCall();
   var bc = calls.bcCall();
-  res.render('index', { title: 'Express', breck: breck, vail: vail, bc: bc});
+  var ks = calls.ksCall();
+  var ab = calls.abCall();
+  res.render('index', { title: 'Express', breck: breck, vail: vail, bc: bc, ks: ks, ab: ab});
 });
 
 module.exports = router;
