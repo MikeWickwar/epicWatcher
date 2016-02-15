@@ -4,10 +4,9 @@ var calls = require('../lib/calls')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  // console.log(calls.brekCall());
-  var yomama = calls.brekCall();
-  console.log(yomama.response);
-  res.render('index', { title: 'Express' });
+
+  console.log(calls.breckCall().sunset);
+  res.render('index', { title: 'Express', breck: breck});
 });
 
 module.exports = router;
